@@ -76,13 +76,6 @@ export function TechHeroVisual({
         </div>
       </div>
 
-      <div className="absolute -right-3 top-10 hidden w-40 rounded-lg border border-cyan/25 bg-[#05142a]/95 p-4 shadow-glow backdrop-blur-xl sm:block">
-        <Bot className="h-7 w-7 text-cyan" aria-hidden="true" />
-        <p className="mt-3 text-sm font-bold text-white">{labels.automation}</p>
-        <div className="mt-3 h-2 overflow-hidden rounded-full bg-white/10">
-          <span className="block h-full w-[78%] rounded-full bg-cyan" />
-        </div>
-      </div>
     </div>
   );
 }

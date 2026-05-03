@@ -123,6 +123,20 @@ export const translations = {
       visionTitle: "Our vision",
       visionText:
         "Our vision is to become a trusted technology partner for businesses that need premium execution, clear guidance, and long-term digital growth.",
+      visual: {
+        title: "UTech Pro",
+        subtitle: "Technology Services",
+        badges: [
+          "Software Engineering",
+          "Data Analytics",
+          "AI Automation",
+          "Digital Solutions"
+        ],
+        metricOne: "Systems",
+        metricTwo: "Insights",
+        metricThree: "Automation",
+        performance: "Performance view"
+      },
       valuesTitle: "Our values",
       values: [
         "Clarity in communication",
@@ -550,6 +564,20 @@ export const translations = {
       visionTitle: "رؤيتنا",
       visionText:
         "رؤيتنا أن نكون شريكا تكنولوجيا موثوقا للشركات التي تحتاج إلى تنفيذ احترافي وإرشاد واضح ونمو رقمي طويل المدى.",
+      visual: {
+        title: "UTech Pro",
+        subtitle: "الخدمات التكنولوجية",
+        badges: [
+          "هندسة البرمجيات",
+          "تحليل البيانات",
+          "أتمتة الذكاء الاصطناعي",
+          "حلول رقمية"
+        ],
+        metricOne: "أنظمة",
+        metricTwo: "رؤى",
+        metricThree: "أتمتة",
+        performance: "عرض الأداء"
+      },
       valuesTitle: "قيمنا",
       values: [
         "وضوح في التواصل",

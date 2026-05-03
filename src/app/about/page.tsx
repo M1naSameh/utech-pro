@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
+import { AboutTechVisual } from "@/components/AboutTechVisual";
 import { FounderSection } from "@/components/FounderSection";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -40,25 +40,7 @@ export default function AboutPage() {
             ))}
           </div>
 
-          <div className="glass-card overflow-hidden">
-            <div className="relative aspect-[16/10]">
-              <Image
-                src="/images/utech-cover.png"
-                alt={t.brand.name}
-                fill
-                className="object-cover"
-                sizes="(min-width: 1024px) 50vw, 100vw"
-                priority
-              />
-            </div>
-            <div className="border-t border-white/10 p-6">
-              <p className="text-sm font-bold uppercase tracking-normal text-cyan">
-                {t.brand.name}
-              </p>
-              <h3 className="mt-3 text-2xl font-black text-white">{t.brand.arabicName}</h3>
-              <p className="mt-3 text-sm leading-7 text-slate-300">{t.brand.tagline}</p>
-            </div>
-          </div>
+          <AboutTechVisual visual={t.about.visual} />
         </div>
       </section>
 
