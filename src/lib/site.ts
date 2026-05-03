@@ -91,13 +91,14 @@ export const translations = {
     },
     founder: {
       eyebrow: "Founder & Company Manager",
+      image: "/images/founder-mina.png",
       previewTitle: "Led by software engineering and data-driven thinking",
       sectionTitle: "Founder and Company Manager",
       nameLabel: "Name",
       titleLabel: "Title",
       educationLabel: "Education",
       roleLabel: "Role",
-      name: "Engineer Mina Sameh",
+      name: "Eng/Mina Sameh",
       title: "Software Engineer & Data Analytics Engineer",
       education: "Graduate of Faculty of Science, Department of Computer Science and Statistics",
       role: "Founder and Manager of UTech Pro",
@@ -517,6 +518,7 @@ export const translations = {
     },
     founder: {
       eyebrow: "المؤسس ومدير الشركة",
+      image: "/images/founder-mina.png",
       previewTitle: "قيادة تجمع بين هندسة البرمجيات والتفكير المبني على البيانات",
       sectionTitle: "المؤسس ومدير الشركة",
       nameLabel: "الاسم",

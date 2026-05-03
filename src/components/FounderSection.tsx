@@ -1,9 +1,13 @@
-﻿import Image from "next/image";
+"use client";
+
+import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { ArrowUpRight, BriefcaseBusiness, GraduationCap, UserRound } from "lucide-react";
 
 type FounderContent = {
   eyebrow: string;
+  image: string;
   previewTitle: string;
   sectionTitle: string;
   nameLabel: string;
@@ -27,6 +31,11 @@ export function FounderSection({
   compact?: boolean;
   ctaLabel?: string;
 }) {
+  const fallbackImage = "/images/logo-mark.png";
+  const [imageSrc, setImageSrc] = useState(founder.image || fallbackImage);
+  const imageClassName =
+    imageSrc === fallbackImage ? "object-contain p-3" : "object-cover object-center";
+  const frameShape = imageSrc === fallbackImage ? "rounded-lg" : "rounded-full";
   const details = [
     {
       icon: UserRound,
@@ -45,18 +54,25 @@ export function FounderSection({
     }
   ];
 
+  useEffect(() => {
+    setImageSrc(founder.image || fallbackImage);
+  }, [founder.image]);
+
   if (compact) {
     return (
       <div className="relative overflow-hidden rounded-lg border border-cyan/20 bg-[#041226] p-6 shadow-glow sm:p-8">
         <div className="grid-fade absolute inset-0 opacity-20" />
         <div className="relative flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
-            <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-lg border border-cyan/25 bg-[#020714] shadow-glow">
+            <div
+              className={`relative h-24 w-24 shrink-0 overflow-hidden border border-cyan/25 bg-[#020714] shadow-glow ${frameShape}`}
+            >
               <Image
-                src="/images/logo-mark.png"
-                alt="UTech Pro logo"
+                src={imageSrc}
+                alt={founder.name}
                 fill
-                className="object-contain"
+                className={imageClassName}
+                onError={() => setImageSrc(fallbackImage)}
                 sizes="96px"
               />
             </div>
@@ -93,12 +109,15 @@ export function FounderSection({
       <div className="grid-fade absolute inset-0 opacity-20" />
       <div className="relative grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:items-center">
         <div className="rounded-lg border border-white/10 bg-white/[0.055] p-5">
-          <div className="relative mx-auto aspect-square w-full max-w-[260px] overflow-hidden rounded-lg border border-cyan/20 bg-[#020714]">
+          <div
+            className={`relative mx-auto aspect-square w-full max-w-[260px] overflow-hidden border border-cyan/20 bg-[#020714] ${frameShape}`}
+          >
             <Image
-              src="/images/logo-mark.png"
-              alt="UTech Pro logo"
+              src={imageSrc}
+              alt={founder.name}
               fill
-              className="object-contain"
+              className={imageClassName}
+              onError={() => setImageSrc(fallbackImage)}
               sizes="(min-width: 1024px) 260px, 70vw"
             />
           </div>
@@ -114,12 +133,12 @@ export function FounderSection({
         <div>
           <p className="text-sm font-bold uppercase tracking-normal text-cyan">{founder.eyebrow}</p>
           <h2 className="mt-3 text-3xl font-black tracking-normal text-white sm:text-4xl">
-            {compact ? founder.previewTitle : founder.sectionTitle}
+            {founder.sectionTitle}
           </h2>
           <div className="mt-5 space-y-4 text-base leading-8 text-slate-300">
-            {compact
-              ? <p>{founder.previewText}</p>
-              : founder.bio.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            {founder.bio.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
           </div>
 
           <div className="mt-7 grid gap-3">
@@ -146,19 +165,8 @@ export function FounderSection({
               );
             })}
           </div>
-
-          {compact && ctaLabel && (
-            <Link
-              href="/about"
-              className="focus-ring mt-7 inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-cyan/30 bg-cyan/10 px-5 text-sm font-bold text-cyan transition hover:bg-cyan hover:text-[#030b18]"
-            >
-              {ctaLabel}
-              <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
-          )}
         </div>
       </div>
     </div>
   );
 }
-
