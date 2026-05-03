@@ -25,16 +25,14 @@ export function TechHeroVisual({
         <div className="grid-fade absolute inset-0 opacity-30" />
         <div className="relative flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="relative h-14 w-14 overflow-hidden rounded-lg border border-cyan/20 bg-white/5">
-              <Image
-                src="/images/logo-mark.png"
-                alt="UTech Pro logo"
-                fill
-                className="object-contain"
-                sizes="56px"
-                priority
-              />
-            </div>
+            <Image
+              src="/images/logo-transparent.png"
+              alt="UTech Pro logo"
+              width={96}
+              height={96}
+              className="h-[72px] w-[72px] shrink-0 object-contain sm:h-20 sm:w-20"
+              priority
+            />
             <div>
               <p className="text-sm font-bold uppercase tracking-normal text-cyan">UTech Pro</p>
               <p className="text-sm text-slate-300">{labels.delivery}</p>

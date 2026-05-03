@@ -106,6 +106,12 @@ export default function ContactPage() {
 
             <div className="grid gap-4">
               <ContactInfo
+                icon={Facebook}
+                label={t.buttons.facebook}
+                value={contactLinks.facebook}
+                href={contactLinks.facebook}
+              />
+              <ContactInfo
                 icon={MessageCircle}
                 label={t.buttons.whatsapp}
                 value={contactLinks.whatsappNumber}
@@ -116,12 +122,6 @@ export default function ContactPage() {
                 label={t.buttons.email}
                 value={contactLinks.email}
                 href={`mailto:${contactLinks.email}`}
-              />
-              <ContactInfo
-                icon={Facebook}
-                label={t.buttons.facebook}
-                value={contactLinks.facebook}
-                href={contactLinks.facebook}
               />
             </div>
           </aside>

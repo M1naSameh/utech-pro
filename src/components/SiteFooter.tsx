@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import type { ReactNode } from "react";
 import { Facebook, Mail, MessageCircle } from "lucide-react";
 import { LogoMark } from "@/components/LogoMark";
@@ -27,23 +26,8 @@ export function SiteFooter() {
       <div className="site-container py-12">
         <div className="grid gap-10 lg:grid-cols-[1.4fr_0.8fr_0.8fr_0.9fr]">
           <div className="space-y-5">
-            <LogoMark subtitle={logoSubtitle} />
+            <LogoMark subtitle={logoSubtitle} size="footer" />
             <p className="max-w-md text-sm leading-7 text-slate-300">{t.footer.description}</p>
-            <div className="flex items-center gap-3">
-              <div className="relative h-14 w-14 overflow-hidden rounded-lg border border-cyan/20 bg-white/5">
-                <Image
-                  src="/images/logo-mark.png"
-                  alt="UTech Pro logo"
-                  fill
-                  className="object-contain"
-                  sizes="56px"
-                />
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-white">{t.brand.name}</p>
-                <p className="text-sm text-slate-400">{t.brand.arabicName}</p>
-              </div>
-            </div>
           </div>
 
           <FooterColumn title={t.footer.quickLinks}>
@@ -63,6 +47,10 @@ export function SiteFooter() {
           </FooterColumn>
 
           <FooterColumn title={t.footer.contact}>
+            <a href={contactLinks.facebook} target="_blank" rel="noreferrer" className="footer-link">
+              <Facebook className="h-4 w-4" aria-hidden="true" />
+              {t.buttons.facebook}
+            </a>
             <a href={contactLinks.whatsapp} target="_blank" rel="noreferrer" className="footer-link">
               <MessageCircle className="h-4 w-4" aria-hidden="true" />
               {t.buttons.whatsapp}
@@ -71,16 +59,12 @@ export function SiteFooter() {
               <Mail className="h-4 w-4" aria-hidden="true" />
               {contactLinks.email}
             </a>
-            <a href={contactLinks.facebook} target="_blank" rel="noreferrer" className="footer-link">
-              <Facebook className="h-4 w-4" aria-hidden="true" />
-              {t.buttons.facebook}
-            </a>
           </FooterColumn>
         </div>
 
         <div className="mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} {t.brand.name}. {t.footer.copyright}
+            &copy; {new Date().getFullYear()} {t.brand.name}. {t.footer.copyright}
           </p>
           <p>{t.brand.tagline}</p>
         </div>

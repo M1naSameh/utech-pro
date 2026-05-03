@@ -31,7 +31,7 @@ export function FounderSection({
   compact?: boolean;
   ctaLabel?: string;
 }) {
-  const fallbackImage = "/images/logo-mark.png";
+  const fallbackImage = "/images/logo-transparent.png";
   const [imageSrc, setImageSrc] = useState(founder.image || fallbackImage);
   const imageClassName =
     imageSrc === fallbackImage ? "object-contain p-3" : "object-cover object-center";

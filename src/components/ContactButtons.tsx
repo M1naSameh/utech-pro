@@ -14,7 +14,7 @@ type ContactButtonLink = {
 export function ContactButtons({
   labels,
   className = "",
-  channels = ["whatsapp", "facebook", "email"]
+  channels = ["facebook", "whatsapp", "email"]
 }: {
   labels: {
     whatsapp: string;
@@ -26,18 +26,18 @@ export function ContactButtons({
 }) {
   const allLinks: ContactButtonLink[] = [
     {
-      key: "whatsapp",
-      href: contactLinks.whatsapp,
-      label: labels.whatsapp,
-      icon: MessageCircle,
-      primary: true
-    },
-    {
       key: "facebook",
       href: contactLinks.facebook,
       label: labels.facebook,
       icon: Facebook,
       primary: false
+    },
+    {
+      key: "whatsapp",
+      href: contactLinks.whatsapp,
+      label: labels.whatsapp,
+      icon: MessageCircle,
+      primary: true
     },
     {
       key: "email",

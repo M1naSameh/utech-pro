@@ -25,16 +25,14 @@ export function AboutTechVisual({ visual }: { visual: AboutVisualContent }) {
       <div className="relative flex h-full flex-col">
         <div className="rounded-lg border border-cyan/20 bg-[#031126]/90 p-5 shadow-glow">
           <div className="mx-auto flex max-w-sm flex-col items-center text-center">
-            <div className="relative h-36 w-36 sm:h-44 sm:w-44">
-              <Image
-                src="/images/logo.png"
-                alt="UTech Pro logo"
-                fill
-                className="object-contain"
-                sizes="(min-width: 640px) 176px, 144px"
-                priority
-              />
-            </div>
+            <Image
+              src="/images/logo-transparent.png"
+              alt="UTech Pro logo"
+              width={96}
+              height={96}
+              className="h-20 w-20 object-contain sm:h-24 sm:w-24"
+              priority
+            />
             <h3 className="mt-4 text-3xl font-black tracking-normal text-white">{visual.title}</h3>
             <p className="mt-2 text-sm font-semibold uppercase tracking-normal text-cyan">
               {visual.subtitle}

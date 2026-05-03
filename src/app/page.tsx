@@ -125,7 +125,15 @@ export default function HomePage() {
               <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
             </Link>
           </div>
-          <PortfolioScroller projects={t.portfolio.projects} cta={t.buttons.viewDetails} />
+          <PortfolioScroller
+            projects={t.portfolio.projects}
+            cta={t.buttons.viewDetails}
+            labels={{
+              projectType: t.portfolio.projectType,
+              goal: t.portfolio.goalLabel,
+              tools: t.portfolio.toolsLabel
+            }}
+          />
         </div>
       </section>
 
@@ -165,7 +173,7 @@ export default function HomePage() {
                 </p>
               </div>
               <ContactButtons
-                channels={["whatsapp", "facebook"]}
+                channels={["facebook", "whatsapp"]}
                 labels={{
                   whatsapp: t.buttons.whatsapp,
                   facebook: t.buttons.facebook,

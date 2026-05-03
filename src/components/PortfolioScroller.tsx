@@ -6,10 +6,16 @@ import { ProjectCard, type Project } from "@/components/ProjectCard";
 
 export function PortfolioScroller({
   projects,
-  cta
+  cta,
+  labels
 }: {
   projects: readonly Project[];
   cta: string;
+  labels: {
+    projectType: string;
+    goal: string;
+    tools: string;
+  };
 }) {
   const scrollerRef = useRef<HTMLDivElement | null>(null);
 
@@ -21,7 +27,7 @@ export function PortfolioScroller({
     }
 
     scroller.scrollBy({
-      left: direction === "next" ? 390 : -390,
+      left: direction === "next" ? 410 : -410,
       behavior: "smooth"
     });
   }
@@ -52,7 +58,13 @@ export function PortfolioScroller({
         className="portfolio-scroll flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth pb-5"
       >
         {projects.map((project) => (
-          <ProjectCard key={project.title} project={project} cta={cta} wide />
+          <ProjectCard
+            key={project.title}
+            project={project}
+            cta={cta}
+            labels={labels}
+            wide
+          />
         ))}
       </div>
     </div>

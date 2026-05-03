@@ -73,9 +73,9 @@ export const translations = {
       },
       portfolioPreview: {
         eyebrow: "Portfolio preview",
-        title: "Demo projects across every service",
+        title: "Portfolio projects across every service",
         subtitle:
-          "Explore concept work that shows how each service can support growth, engagement, automation, and better decision-making."
+          "Explore portfolio-style project case studies that show how each service can support growth, engagement, automation, and better decision-making."
       },
       process: {
         eyebrow: "How we work",
@@ -276,53 +276,71 @@ export const translations = {
     ],
     portfolio: {
       eyebrow: "Portfolio",
-      title: "Demo projects designed for real business use cases",
+      title: "Portfolio projects designed for real business use cases",
       subtitle:
-        "Each concept shows how UTech Pro can shape a service into a practical, polished deliverable.",
-      gridTitle: "All demo projects",
-      carouselTitle: "Featured demos",
+        "Each portfolio project shows how UTech Pro can shape a service into a practical, polished deliverable.",
+      gridTitle: "All portfolio projects",
+      carouselTitle: "Featured portfolio projects",
+      projectType: "Portfolio Project",
+      goalLabel: "Goal",
+      toolsLabel: "Tools Used",
       projects: [
         {
           icon: "web",
-          title: "Business Website Demo",
+          title: "Smart Business Website",
           category: "Web Development",
-          description: "A modern website for a growing business.",
-          tools: ["Next.js", "Tailwind CSS", "SEO"]
+          goal:
+            "A professional company website designed to present services, build trust, and convert visitors into leads.",
+          description:
+            "A modern responsive business website with landing sections, service pages, contact CTAs, SEO-ready structure, and clean performance-focused UI.",
+          tools: ["Next.js", "TypeScript", "Tailwind CSS", "SEO", "Responsive Design"]
         },
         {
           icon: "mobile",
-          title: "Mobile App UI Demo",
-          category: "Mobile Apps",
-          description: "A clean mobile app interface for customer engagement.",
-          tools: ["React Native", "Figma", "UX Flow"]
+          title: "TaskFlow Mobile App",
+          category: "Mobile App Development",
+          goal:
+            "A mobile app concept for managing tasks, reminders, and team productivity in a simple interface.",
+          description:
+            "A clean mobile application UI concept with authentication screens, dashboard, task lists, notifications, and user-friendly navigation.",
+          tools: ["React Native", "Expo", "TypeScript", "UI/UX", "Mobile Design"]
         },
         {
           icon: "ai",
-          title: "AI Chatbot Automation Demo",
+          title: "AI Customer Support Assistant",
           category: "AI Automation",
-          description: "Automated customer replies and lead collection.",
-          tools: ["AI Chatbot", "CRM Flow", "Forms"]
+          goal: "Automate customer replies, collect leads, and reduce manual support work.",
+          description:
+            "An AI chatbot workflow that answers common customer questions, captures contact details, classifies requests, and forwards qualified leads to WhatsApp or email.",
+          tools: ["OpenAI API", "Node.js", "Automation Workflows", "Webhooks", "WhatsApp Integration"]
         },
         {
           icon: "data",
-          title: "Sales Dashboard Demo",
+          title: "Sales Performance Dashboard",
           category: "Data Analysis",
-          description: "Interactive dashboard for tracking business performance.",
-          tools: ["Power BI", "Excel", "KPIs"]
+          goal: "Turn raw sales data into clear insights for better business decisions.",
+          description:
+            "A business intelligence dashboard showing revenue trends, top products, customer segments, monthly performance, and actionable insights.",
+          tools: ["Power BI", "Excel", "SQL", "Python", "Data Visualization"]
         },
         {
           icon: "design",
-          title: "Social Media Branding Demo",
+          title: "Nova Brand Identity Kit",
           category: "Graphic Design",
-          description: "Professional social media visuals for brand awareness.",
-          tools: ["Brand Kit", "Canva", "Ads"]
+          goal: "Build a consistent visual identity for a modern digital brand.",
+          description:
+            "A complete brand identity concept including logo direction, color palette, typography, social media templates, and ad creatives.",
+          tools: ["Adobe Photoshop", "Adobe Illustrator", "Canva", "Branding", "Social Media Design"]
         },
         {
           icon: "video",
-          title: "Promo Video Editing Demo",
+          title: "Launch Promo Video",
           category: "Video Editing",
-          description: "Short promotional video concept for digital campaigns.",
-          tools: ["Premiere", "Reels", "Motion"]
+          goal:
+            "Create a short promotional video designed for social media campaigns and product launches.",
+          description:
+            "A modern promo video concept with clean cuts, motion text, brand colors, music timing, and vertical/social media friendly formatting.",
+          tools: ["Adobe Premiere Pro", "After Effects", "CapCut", "Motion Graphics", "Reels Editing"]
         }
       ]
     },
@@ -514,9 +532,9 @@ export const translations = {
       },
       portfolioPreview: {
         eyebrow: "لمحة من الأعمال",
-        title: "نماذج مشاريع تغطي كل خدمة",
+        title: "مشاريع معرض أعمال تغطي كل خدمة",
         subtitle:
-          "استعرض نماذج توضح كيف يمكن لكل خدمة أن تدعم النمو والتفاعل والأتمتة واتخاذ القرار بشكل أفضل."
+          "استعرض دراسات مشاريع ضمن معرض الأعمال توضح كيف يمكن لكل خدمة أن تدعم النمو والتفاعل والأتمتة واتخاذ القرار بشكل أفضل."
       },
       process: {
         eyebrow: "طريقة العمل",
@@ -717,53 +735,70 @@ export const translations = {
     ],
     portfolio: {
       eyebrow: "أعمالنا",
-      title: "نماذج مشاريع مصممة لاستخدامات تجارية واقعية",
+      title: "مشاريع ضمن معرض الأعمال مصممة لاستخدامات تجارية واقعية",
       subtitle:
-        "كل نموذج يوضح كيف يمكن ليوتك برو تحويل الخدمة إلى نتيجة عملية واحترافية.",
-      gridTitle: "كل نماذج الأعمال",
-      carouselTitle: "نماذج مميزة",
+        "كل مشروع يوضح كيف يمكن ليوتك برو تحويل الخدمة إلى نتيجة عملية واحترافية.",
+      gridTitle: "كل مشاريع معرض الأعمال",
+      carouselTitle: "مشاريع مميزة",
+      projectType: "مشروع ضمن معرض الأعمال",
+      goalLabel: "الهدف",
+      toolsLabel: "الأدوات المستخدمة",
       projects: [
         {
           icon: "web",
-          title: "نموذج موقع شركة",
+          title: "Smart Business Website",
           category: "تطوير المواقع",
-          description: "موقع حديث لشركة في مرحلة نمو.",
-          tools: ["Next.js", "Tailwind CSS", "SEO"]
+          goal:
+            "موقع شركة احترافي مصمم لعرض الخدمات وبناء الثقة وتحويل الزوار إلى عملاء محتملين.",
+          description:
+            "موقع أعمال حديث ومتجاوب يحتوي على أقسام هبوط وصفحات خدمات ودعوات تواصل وبنية جاهزة للسيو وواجهة نظيفة تركز على الأداء.",
+          tools: ["Next.js", "TypeScript", "Tailwind CSS", "SEO", "Responsive Design"]
         },
         {
           icon: "mobile",
-          title: "نموذج واجهة تطبيق",
-          category: "تطبيقات الهاتف",
-          description: "واجهة تطبيق نظيفة للتفاعل مع العملاء.",
-          tools: ["React Native", "Figma", "UX Flow"]
+          title: "TaskFlow Mobile App",
+          category: "تطوير تطبيقات الموبايل",
+          goal:
+            "تصور لتطبيق موبايل لإدارة المهام والتذكيرات وإنتاجية الفريق من خلال واجهة بسيطة.",
+          description:
+            "تصور واجهات تطبيق موبايل نظيف يشمل شاشات تسجيل الدخول ولوحة تحكم وقوائم مهام وإشعارات وتنقل سهل للمستخدم.",
+          tools: ["React Native", "Expo", "TypeScript", "UI/UX", "Mobile Design"]
         },
         {
           icon: "ai",
-          title: "نموذج شات بوت ذكي",
+          title: "AI Customer Support Assistant",
           category: "أتمتة الذكاء الاصطناعي",
-          description: "ردود عملاء آلية وجمع بيانات العملاء المحتملين.",
-          tools: ["AI Chatbot", "CRM Flow", "Forms"]
+          goal: "أتمتة ردود العملاء وجمع العملاء المحتملين وتقليل العمل اليدوي في الدعم.",
+          description:
+            "سير عمل لشات بوت ذكي يجيب على الأسئلة الشائعة ويجمع بيانات التواصل ويصنف الطلبات ويرسل العملاء المؤهلين إلى واتساب أو البريد الإلكتروني.",
+          tools: ["OpenAI API", "Node.js", "Automation Workflows", "Webhooks", "WhatsApp Integration"]
         },
         {
           icon: "data",
-          title: "نموذج لوحة مبيعات",
+          title: "Sales Performance Dashboard",
           category: "تحليل البيانات",
-          description: "لوحة تفاعلية لمتابعة أداء العمل.",
-          tools: ["Power BI", "Excel", "KPIs"]
+          goal: "تحويل بيانات المبيعات الخام إلى رؤى واضحة تساعد على قرارات عمل أفضل.",
+          description:
+            "لوحة ذكاء أعمال تعرض اتجاهات الإيرادات وأفضل المنتجات وشرائح العملاء والأداء الشهري ورؤى قابلة للتنفيذ.",
+          tools: ["Power BI", "Excel", "SQL", "Python", "Data Visualization"]
         },
         {
           icon: "design",
-          title: "نموذج هوية سوشيال ميديا",
-          category: "تصميم جرافيكي",
-          description: "مرئيات سوشيال ميديا احترافية لزيادة الوعي بالعلامة.",
-          tools: ["Brand Kit", "Canva", "Ads"]
+          title: "Nova Brand Identity Kit",
+          category: "التصميم الجرافيكي",
+          goal: "بناء هوية بصرية متناسقة لعلامة رقمية حديثة.",
+          description:
+            "تصور كامل لهوية بصرية يشمل اتجاه الشعار ولوحة الألوان والخطوط وقوالب السوشيال ميديا وتصميمات الإعلانات.",
+          tools: ["Adobe Photoshop", "Adobe Illustrator", "Canva", "Branding", "Social Media Design"]
         },
         {
           icon: "video",
-          title: "نموذج فيديو ترويجي",
-          category: "مونتاج فيديو",
-          description: "فكرة فيديو ترويجي قصير للحملات الرقمية.",
-          tools: ["Premiere", "Reels", "Motion"]
+          title: "Launch Promo Video",
+          category: "المونتاج وصناعة المحتوى",
+          goal: "إنشاء فيديو ترويجي قصير مناسب لحملات السوشيال ميديا وإطلاق المنتجات.",
+          description:
+            "تصور فيديو ترويجي حديث يعتمد على قطع نظيف ونصوص متحركة وألوان العلامة وتوقيت موسيقي وتنسيق مناسب للمحتوى الرأسي والسوشيال ميديا.",
+          tools: ["Adobe Premiere Pro", "After Effects", "CapCut", "Motion Graphics", "Reels Editing"]
         }
       ]
     },

@@ -24,7 +24,15 @@ export default function PortfolioPage() {
             title={t.portfolio.carouselTitle}
             subtitle={t.portfolio.subtitle}
           />
-          <PortfolioScroller projects={t.portfolio.projects} cta={t.buttons.viewDetails} />
+          <PortfolioScroller
+            projects={t.portfolio.projects}
+            cta={t.buttons.viewDetails}
+            labels={{
+              projectType: t.portfolio.projectType,
+              goal: t.portfolio.goalLabel,
+              tools: t.portfolio.toolsLabel
+            }}
+          />
         </div>
       </section>
 
@@ -41,6 +49,11 @@ export default function PortfolioPage() {
                 key={project.title}
                 project={project}
                 cta={t.buttons.viewDetails}
+                labels={{
+                  projectType: t.portfolio.projectType,
+                  goal: t.portfolio.goalLabel,
+                  tools: t.portfolio.toolsLabel
+                }}
               />
             ))}
           </div>

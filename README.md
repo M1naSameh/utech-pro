@@ -97,6 +97,7 @@ Image assets are stored in:
 ```txt
 public/images/logo.png
 public/images/logo-mark.png
+public/images/logo-transparent.png
 public/images/utech-cover.png
 ```
 

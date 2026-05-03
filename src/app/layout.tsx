@@ -6,6 +6,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://utechpro.com"),
   title: "UTech Pro | Smart Technology Solutions",
   description:
     "UTech Pro provides websites, mobile apps, AI automation, data analysis, graphic design, and video editing services for modern businesses.",
