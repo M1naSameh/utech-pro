@@ -40,7 +40,7 @@ export default function AboutPage() {
             ))}
           </div>
 
-          <AboutTechVisual visual={t.about.visual} />
+          <AboutTechVisual />
         </div>
       </section>
 
